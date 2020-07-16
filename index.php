@@ -112,14 +112,17 @@ PRIMARY KEY (`id`)
                 </tbody>
                   </table>
                 </div>
+                
+                  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 justify-content-around">
+               
 <?php 
              
                              foreach ($rows as $key => $value){ ?>
 <!-- beg of bootstap -->
 
-<div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 mx-4 justify-content-around">
-    <div class="col-4 mb-4 p-2">
-      <div class="card-deck" >
+
+    <div class="col mb-3 m-1">
+      <div class="card h-100">
              <img src="<?= $value['img'] ?>" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title"><?= $value['brand']." ".$value['model' ] ?></h5>
@@ -131,13 +134,13 @@ PRIMARY KEY (`id`)
         </div>
   </div>
 </div>
-</div>
+
 <!-- end of bootstrap -->
                 <?php
                ;}
              }
              ?>
-     
-
+   
+</div>
 </body>
 </html>
